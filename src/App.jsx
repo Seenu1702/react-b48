@@ -9,10 +9,15 @@ const Hello = (props) =>
 }
 
 const App = () =>{
+
+  const appHeaderStyle = 
+    { 
+      color:'white', 
+      background:'red'
+    };
   return (
-    
     <div>
-      <h1 style={{ color:'white', background:'red'}}>Greetings</h1>
+      <h1 style={appHeaderStyle}>Greetings</h1>
       <Hello name='Seenu' age='24'/>
       <Hello name='Seenu' age='24'/>
       {/* <Hello /> this will be reusabele componenet same like functions  */}
