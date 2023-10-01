@@ -10,7 +10,7 @@ function App(props) {
   return (
     <div>
       <h1>Notes</h1>
-      <ul> { itemList } </ul>
+      <ul> { itemList }</ul>
     </div>
     
   )
