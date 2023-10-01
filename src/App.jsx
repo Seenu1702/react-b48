@@ -1,29 +1,22 @@
-const Hello = (props) =>
-// console.log(props);
-{
+
+function App(props) {
+  // console.log(props.notes);
+  const {notes} =  props;
+  // console.log(notes);
+  
   return (
     <div>
-      <p>Hello { props.name}, your age is { props.age}</p>
+      <h1>Notes</h1>
+      <ul>
+        <li>{notes[0].content}</li>
+        <li>{notes[1].content}</li>
+        <li>{notes[2].content}</li>
+        <li>{notes[3].content}</li>
+        <li>{notes[4].content}</li>
+      </ul>
     </div>
+    
   )
 }
 
-const App = () =>{
-
-  const appHeaderStyle = 
-    { 
-      color:'white', 
-      background:'red'
-    };
-  return (
-    <div>
-      <h1 style={appHeaderStyle}>Greetings</h1>
-      <Hello name='Seenu' age='24'/>
-      <Hello name='Seenu' age='24'/>
-      {/* <Hello /> this will be reusabele componenet same like functions  */}
-    </div>
-  )
-
-} 
-
-export default App;
+export default App
