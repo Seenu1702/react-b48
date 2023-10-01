@@ -1,10 +1,4 @@
-function Note ({ note }) {
-  return(
-    <li>{ note.content }</li>
-  )
-}
-
-
+import Note from "./components/Note";
 
 function App(props) {
   const {notes} =  props;
@@ -13,7 +7,6 @@ function App(props) {
     <div>
       <h1>Notes</h1>
       <ul>
-       
         {
           notes.map((note) => {
             return <Note key={ note.id } note = { note }/>
